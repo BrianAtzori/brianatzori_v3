@@ -1,0 +1,71 @@
+.skills-wrapper{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.skill-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 10px 10px 10px;
+}
+
+.skill-container > img{
+  width: 80px;
+  height: 80px;
+}
+
+.skill-container > H6{
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 450px) {
+
+  .skill-container{
+    flex: 1 0 21%;
+  }
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+
+  .skill-container{
+    flex: 1 0 21%;
+  }
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+
+  .skill-container{
+    flex: 1 0 21%;
+  }
+
+  .skill-container > img{
+    width: 50px;
+    height: 50px;
+  }
+
+}
+
+/* Desktop L Styles */
+@media only screen and (min-width: 1440px) {
+
+
+}
+
+/* 4K */
+@media only screen and (min-width: 2560px) {
+
+}
