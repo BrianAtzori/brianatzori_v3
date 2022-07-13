@@ -16,14 +16,14 @@ html {
 .divider{
   height:5px;
   background-color: #357D82;
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-bottom: 35px;
 }
 
 .section-label{
   font-style: italic;
   align-self: flex-start;
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 /* Mobile */
@@ -38,7 +38,6 @@ html {
 @media only screen and (min-width: 451px) and (max-width: 960px) {
 
   .divider{
-    margin-top: 25px;
     width: 50%;
   }
 
@@ -49,7 +48,6 @@ html {
 
 
   .divider{
-    margin-top: 35px;
     width: 40%;
   }
 
@@ -65,7 +63,6 @@ html {
 @media only screen and (min-width: 2560px) {
 
   .divider{
-    margin-top: 35px;
     width: 50%;
   }
 
