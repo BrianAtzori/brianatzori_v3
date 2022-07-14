@@ -2,6 +2,53 @@ html {
   scroll-behavior: smooth;
 }
 
+.contact-button{
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  border-radius: 50%;
+  background-color: #357D82;
+  height: 70px;
+  width: 70px;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.mail-to > img{
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+}
+
+.site-footer{
+  background-color: #10486A;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo_brianatzori{
+  width: 200px;
+}
+
+.logo_brat_container{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.logo_brat{
+  height: 120px;
+  width: 120px;
+}
+
 .content-container{
   display: flex;
   margin:auto;
@@ -41,6 +88,15 @@ html {
     width: 50%;
   }
 
+  .logo_brat{
+    height: 150px;
+    width: 150px;
+  }
+
+  .logo_brianatzori{
+    width: 300px;
+  }
+
 }
 
 /* Desktop Styles */
@@ -49,6 +105,15 @@ html {
 
   .divider{
     width: 40%;
+  }
+
+  .logo_brat{
+    height: 180px;
+    width: 180px;
+  }
+
+  .logo_brianatzori{
+    width: 400px;
   }
 
 }
