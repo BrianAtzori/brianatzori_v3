@@ -21,6 +21,13 @@
   height: 30px;
 }
 
+.contact-container > a> img:hover{
+  transform: rotate(25deg);
+  border: dotted 2px #357D82;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
 /* Tablet Styles */
 @media only screen and (min-width: 451px) and (max-width: 960px) {
 

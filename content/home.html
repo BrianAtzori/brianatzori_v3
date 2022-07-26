@@ -53,8 +53,10 @@
                  emailjs.sendForm('service_a6439uj', 'contact_form', this)
                      .then(function() {
                          console.log('SUCCESS!');
+                         alert("Messaggio inviato correttamente :)");
                      }, function(error) {
                          console.log('FAILED...', error);
+                         alert("Errore :( Riprova o utilizza un altro canale.)");
                      });
              });
          }
@@ -111,7 +113,7 @@
 
                   <h2 class="accordion-header" id="headingOne">
 
-                      <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne">Scopri di più</button>
+                      <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne">Clicca per espandere +</button>
 
                   </h2>
 

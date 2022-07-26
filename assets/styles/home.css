@@ -85,7 +85,13 @@ section{
   background-color:#357D82;
   color: white;
   border-color: white;
+  opacity: 0.5;
+}
 
+.send-button:hover{
+  opacity: 1;
+  transition: 0.3s;
+  box-shadow: 2px 2px white;
 }
 
 /* Mobile */

@@ -1,7 +1,12 @@
-.accordion{
- 
+.accordion-button{
+  background-color: #357D82;
+  color:white;
+  opacity: 0.8;
 }
 
+.accordion-header{
+  
+}
 
 .path-container{
 	padding-left: 20px;
