@@ -2,29 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.contact-button{
-  position: fixed;
-  bottom: 30px;
-  right: 40px;
-  border-radius: 50%;
-  background-color: #357D82;
-  height: 70px;
-  width: 70px;
-  justify-content: space-around;
-  display: flex;
-  align-items: center;
-  z-index: 1;
-}
-
-.mail-to > img{
-  position: fixed;
-  bottom: 30px;
-  right: 40px;
-  border-radius: 50%;
-  height: 70px;
-  width: 70px;
-}
-
 .site-footer{
   background-color: #10486A;
   width: 100%;
@@ -33,6 +10,29 @@ html {
   flex-direction: column;
   align-items: center;
 }
+
+.contact-form-container{
+  display:flex;
+  justify-content: space-around;
+  flex-direction: column;
+  font-family: 'Noto Sans', sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contact-form-container > input, textarea{
+  margin-bottom: 20px;
+}
+
+.contact-form-container > textarea{
+  padding-bottom: 50px;
+}
+
+
+label{
+  color:white;
+}
+
 
 .logo_brianatzori{
   width: 200px;
@@ -70,6 +70,14 @@ html {
   font-style: italic;
   align-self: flex-start;
   margin-bottom: 25px;
+}
+
+.send-button{
+  border-radius: 20px 50px 20px 50px;
+  background-color:#357D82;
+  color: white;
+  border-color: white;
+
 }
 
 /* Mobile */

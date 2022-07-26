@@ -34,17 +34,35 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+     <script type="text/javascript">
+         (function() {
+             // https://dashboard.emailjs.com/admin/account
+             emailjs.init('IMM35fjRta0tqtoc0');
+         })();
+     </script>
+
+     <script type="text/javascript">
+         window.onload = function() {
+             document.getElementById('contact-form').addEventListener('submit', function(event) {
+                 event.preventDefault();
+                 // generate a five digit number for the contact_number variable
+                 this.contact_number.value = Math.random() * 100000 | 0;
+                 // these IDs from the previous steps
+                 emailjs.sendForm('service_a6439uj', 'contact_form', this)
+                     .then(function() {
+                         console.log('SUCCESS!');
+                     }, function(error) {
+                         console.log('FAILED...', error);
+                     });
+             });
+         }
+     </script>
 
   </head>
 
   <body>
-
-      <div class="contact-button">
-
-        <a class="mail-to" href="mailto:hello@brianatzori.it"><img src="../assets/images/icon-mail.svg" alt="Icona di una mail" style="max-width: 100px"/></a>
-
-      </div>
 
       <div class="container">
 
@@ -554,7 +572,31 @@
 
       <footer class="site-footer">
 
+        <section class="contact-form-section">
 
+          <form id="contact-form" class="contact-form-container">
+
+            <input type="hidden" name="contact_number">
+
+            <label>Il tuo nome:</label>
+
+            <input type="text" name="user_name">
+
+            <label>La tua mail:</label>
+
+            <input type="email" name="user_email">
+
+            <label>Il tuo messaggio:</label>
+
+            <textarea name="message"></textarea>
+
+            <input type="submit" value="Inviami una mail" class="send-button">
+
+            <label>Copyright 2022 © Brian Atzori</label>
+
+        </form>
+
+      </section>
 
       </footer>
 
