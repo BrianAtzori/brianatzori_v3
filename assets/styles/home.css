@@ -18,6 +18,8 @@ html {
   font-family: 'Noto Sans', sans-serif;
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .contact-form-container > input, textarea{
@@ -28,11 +30,9 @@ html {
   padding-bottom: 50px;
 }
 
-
 label{
   color:white;
 }
-
 
 .logo_brianatzori{
   width: 200px;
@@ -67,9 +67,17 @@ label{
 }
 
 .section-label{
+  display: flex;
   font-style: italic;
   align-self: flex-start;
   margin-bottom: 25px;
+}
+
+section{
+  display: flex;
+  width: 100%;
+  align-self: center;
+  flex-direction: column;
 }
 
 .send-button{
@@ -104,6 +112,11 @@ label{
     width: 300px;
   }
 
+  .contact-form-container{
+    width:50%;
+    align-self: center;
+  }
+
 }
 
 /* Desktop Styles */
@@ -123,10 +136,20 @@ label{
     width: 400px;
   }
 
+  .contact-form-container{
+    width:50%;
+    align-self: center;
+  }
+
 }
 
 /* Desktop L Styles */
 @media only screen and (min-width: 1440px) {
+
+  .contact-form-container{
+    width:30%;
+    align-self: center;
+  }
 
 
 }
@@ -136,6 +159,11 @@ label{
 
   .divider{
     width: 50%;
+  }
+
+  .contact-form-container{
+    width:20%;
+    align-self: center;
   }
 
 }

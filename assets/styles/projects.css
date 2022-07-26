@@ -5,8 +5,17 @@
   margin-bottom: 20px;
 }
 
+.project-container{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-self: center;
+}
+
 .project-banner{
   width: 250px;
+  display: flex;
+  align-self: center;
 }
 
 
@@ -24,6 +33,8 @@
 
   .project-banner{
     width: 450px;
+    display: flex;
+    align-self: center;
   }
 
 }
@@ -33,6 +44,8 @@
 
   .project-banner{
     width: 550px;
+    display: flex;
+    align-self: center;
   }
 
 }
